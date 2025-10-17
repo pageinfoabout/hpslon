@@ -694,7 +694,7 @@ function App() {
                   <li key={item.name} className="service-row">
                     <span className="service-name">{item.name}</span>
                     <span className="service-time muted">{item.time}</span>
-                    <span className="service-price">{item.price}</span>
+                    <a className="service-price" href={yclientsLink} target="_blank" rel="noreferrer noopener">{item.price}</a>
                   </li>
                 ))}
               </ul>
@@ -740,7 +740,7 @@ function App() {
                   <li key={item.name} className="service-row">
                     <span className="service-name">{item.name}</span>
                     <span className="service-time muted">{item.time}</span>
-                    <span className="service-price">{item.price}</span>
+                    <a className="service-price" href={yclientsLink} target="_blank" rel="noreferrer noopener">{item.price}</a>
                   </li>
                 ))}
               </ul>
@@ -766,7 +766,7 @@ function App() {
                   <li key={item.name} className="service-row">
                     <span className="service-name">{item.name}</span>
                     <span className="service-time muted">{item.time}</span>
-                    <span className="service-price">{item.price}</span>
+                    <a className="service-price" href={yclientsLink} target="_blank" rel="noreferrer noopener">{item.price}</a>
                   </li>
                 ))}
               </ul>
@@ -795,7 +795,7 @@ function App() {
                       <li key={item.name} className="service-row">
                         <span className="service-name">{item.name}</span>
                         <span className="service-time muted">{item.time}</span>
-                        <span className="service-price">{item.price}</span>
+                        <a className="service-price" href={yclientsLink} target="_blank" rel="noreferrer noopener">{item.price}</a>
                       </li>
                     ))}
                   </ul>
@@ -823,7 +823,7 @@ function App() {
                   <li key={item.name} className="service-row">
                     <span className="service-name">{item.name}</span>
                     <span className="service-time muted">{item.time}</span>
-                    <span className="service-price">{item.price}</span>
+                    <a className="service-price" href={yclientsLink} target="_blank" rel="noreferrer noopener">{item.price}</a>
                   </li>
                 ))}
               </ul>
@@ -849,7 +849,7 @@ function App() {
                   <li key={item.name} className="service-row">
                     <span className="service-name">{item.name}</span>
                     <span className="service-time muted">{item.time}</span>
-                    <span className="service-price">{item.price}</span>
+                    <a className="service-price" href={yclientsLink} target="_blank" rel="noreferrer noopener">{item.price}</a>
                   </li>
                 ))}
               </ul>
