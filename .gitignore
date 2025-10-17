@@ -1,0 +1,34 @@
+# Node / JavaScript
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Logs
+logs
+*.log
+*.log.*
+
+# Editor/OS
+.DS_Store
+.vscode/
+.idea/
+
+# Env
+.env
+.env.*
+
+# Build output
+client/dist/
+client/.vite/
+server/build/
+server/dist/
+
+# Cache
+client/.cache/
+server/.cache/
+
+# Misc
+*.local
+
