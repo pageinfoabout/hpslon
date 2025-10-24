@@ -440,10 +440,10 @@ function App() {
             </div>
             <div className="grid-4 services-grid">
               {[
-                { title: 'Лазерная эпиляция', desc: 'Комфортная и эффективная эпиляция.', img: '/striga.jpg', onClick: () => setIsLaserOpen(true) },
+                { title: 'Лазерная эпиляция', desc: 'Комфортная и эффективная эпиляция.', img: '/striga.jpeg', onClick: () => setIsLaserOpen(true) },
                 { title: 'Окрашивание', desc: 'Современные техники и щадящие формулы.', img: '/okrashivanie.png', onClick: () => setIsHairOpen(true) },
                 { title: 'Маникюр', desc: 'Комфортный уход и безупречное покрытие.', img: '/nogti.png', onClick: () => setIsNailsOpen(true) },
-                { title: 'Брови и ресницы', desc: 'Коррекция, окрашивание, ламинирование.', img: '/brovi.png', onClick: () => setIsBrowsOpen(true) },
+                { title: 'Брови и ресницы', desc: 'Коррекция, окрашивание, ламинирование.', img: '/bir.jpeg', onClick: () => setIsBrowsOpen(true) },
               ].map((s, i) => (
                 <article
                   key={s.title}
@@ -591,9 +591,9 @@ function App() {
             </div>
             <div className="grid-3 reviews-grid">
               {[
-                { name: 'Анастасия', text: 'Отличная атмосфера и внимательные мастера. Вернусь снова!' },
-                { name: 'Марина', text: 'Сделали идеальное окрашивание. Спасибо за заботу и совет по уходу!' },
-                { name: 'Екатерина', text: 'Маникюр и брови на высоте. Всё чисто и аккуратно.' },
+               { name: 'Любовь Калинина', text: 'Я в восторге от этого салона красоты! Мастера очень добрые и милые, в самом салоне уютно, приятно находиться. Так же мне предложили чай и кофе. 100% вернусь сюда ещё!' },
+               { name: 'Анна Ж.', text: 'Прекрасное место, девушка моя на наращивание ресниц записалась и наконец она была счастлива и в восторге. Столько мастеров поменяла, ваши просто чудо. Спасибо вам.' },
+               { name: 'Жанетта Османова', text: 'Была в этом салоне Очень довольна визитом. Атмосфера супер уютная, а мастера — настоящие профессионалы. Сделали всё именно так, как я хотела. Обязательно вернусь и буду рекомендовать всем!' },
               ].map((r, i) => (
                 <figure key={r.name} className="card review-card reveal" style={{ transitionDelay: `${i * 60}ms` }}>
                   <blockquote>“{r.text}”</blockquote>
@@ -614,8 +614,8 @@ function App() {
             <div className="grid-3 news-grid">
               {[
                 { title: 'Сезонное окрашивание', text: 'Новые оттенки и уходовые комплексы.' },
-                { title: 'Скидка на уходы', text: 'Весь месяц —15% на программы восстановления.' },
-                { title: 'Команда растёт', text: 'Присоединился топ-мастер по маникюру.' },
+                { title: 'Скидка на уходы', text: 'Скидка на первое посещение -15%  ' },
+                { title: 'Команда ждет пополнения', text: 'Присоединись к нам и стань частью команды.' },
               ].map((n, i) => (
                 <article key={n.title} className="card reveal" style={{ transitionDelay: `${i * 60}ms` }}>
                   <div className="card-body">
@@ -685,7 +685,7 @@ function App() {
           <div className="modal-content" onClick={e => e.stopPropagation()}>
             <button className="modal-close" aria-label="Закрыть" onClick={() => setIsLaserOpen(false)}>✕</button>
             <div className="modal-hero">
-              <img src="/striga.jpg" alt="Лазерная эпиляция" />
+              <img src="/striga.jpeg" alt="Лазерная эпиляция" />
             </div>
             <div className="modal-body">
               <h3 id="laser-title" className="display-serif">Лазерная эпиляция</h3>
@@ -840,7 +840,7 @@ function App() {
           <div className="modal-content" onClick={e => e.stopPropagation()}>
             <button className="modal-close" aria-label="Закрыть" onClick={() => setIsBrowsOpen(false)}>✕</button>
             <div className="modal-hero">
-              <img src="/brovi.png" alt="Брови и ресницы" />
+              <img src="/bir.jpeg" alt="Брови и ресницы" />
             </div>
             <div className="modal-body">
               <h3 id="brows-title" className="display-serif">Брови и ресницы</h3>
