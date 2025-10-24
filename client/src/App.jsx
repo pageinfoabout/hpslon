@@ -646,15 +646,11 @@ function App() {
                   <h3>Время работы</h3>
                   <p className="muted">Ежедневно: 10:00–21:00</p>
                   <h3>Связаться</h3>
+                  <div className="contact-phone">+7 936 308-02-00</div>
+                  <div className="email"> h-p-beauty@mail.ru</div>
                   <ul className="contact-list">
                     <li>
                       <a href={`tel:${phoneNumber}`} className="btn secondary">Позвонить</a>
-                    </li>
-                    <li>
-                      <a href={whatsappLink} target="_blank" rel="noreferrer noopener" className="btn secondary"><img className="btn-icon colored" src={whatsappIcon} alt="" aria-hidden="true" onError={e => (e.currentTarget.style.display='none')} />WhatsApp</a>
-                    </li>
-                    <li>
-                      <a href={telegramChatLink} target="_blank" rel="noreferrer noopener" className="btn secondary"><img className="btn-icon colored" src={telegramIcon} alt="" aria-hidden="true" onError={e => (e.currentTarget.style.display='none')} />Написать в Telegram</a>
                     </li>
                   </ul>
                   <div className="social-links">
