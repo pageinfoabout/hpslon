@@ -22,11 +22,29 @@ const heroSlides = [
 const whatsappIcon = '/icons8-whatsapp.svg'
 const telegramIcon = '/icons8-telegram-app.svg'
 const galleryImages = [
-  '/photo1.png',
+'/photo1.png',
   '/photo2.png',
   '/photo3.png',
   '/photo4.png',
-  '/photo5.png',
+  '/photo5.png',    
+  '/photo/03b2200f-e4a7-4281-8413-9f4b101e8f52.jpeg',
+  '/photo/0b6486cd-c4da-4f4f-b3be-ec93507de3d6.jpeg',
+  '/photo/19136312-e452-4ad7-84d9-0acb76a39740.jpeg',
+  '/photo/38850df2-3182-4922-bad6-c7dfae0cfaf8.jpeg',
+  '/photo/572e1187-3f06-448a-adfe-19d2064a3f92.jpeg',
+  '/photo/76b6fb94-9701-4e54-bf23-5facda5d0185.jpeg',
+  '/photo/9658b71a-66ef-412a-bb54-21cb73e6e9f1.jpeg',
+  '/photo/a7a05836-59fe-47da-8c73-36c380f305a0.jpeg',
+  '/photo/af49cf16-0880-411c-91d5-eadc93d1e15d.jpeg',
+  '/photo/bda384a6-8a0a-41c3-98ee-1e4268874a28.jpeg',
+  '/photo/be303dfb-5631-4dab-8804-a62c754928db.jpeg',
+  '/photo/c23a2f7a-c14d-4140-b98f-d2a863bc6906.jpeg',
+  '/photo/ce9b4cb8-3f5a-492d-babd-a91b51a3d301.jpeg',
+  '/photo/d444c907-9506-4642-b6f0-70f0bc1d7503.jpeg',
+  '/photo/df55522c-d85f-46ff-831d-88eb93c4d238.jpeg',
+  '/photo/e0750108-7604-4f37-a5a3-ab068258b78a.jpeg',
+  '/photo/e5a53c1f-e0cd-49f4-87f6-3e0699683135.jpeg',
+  '/photo/e6389fcf-cc41-401c-a208-30bf4603936c.jpeg',
 ]
 
 function App() {
@@ -412,11 +430,13 @@ function App() {
               <p className="muted">Опытные специалисты, которые заботятся о вашей красоте</p>
             </div>
             <div className="grid-3 team-grid">
-              {[
-                { name: 'Наташа', photo: '/5cebb2f072b19b14ec04484f30a11b8d.jpg', desc: 'Стилист по волосам. Современные стрижки и укладки.' },
-                { name: 'Надя', photo: '/4e5d84e967cdf19ece54aaa281220669.jpg', desc: 'Мастер маникюра. Аккуратность, стойкое покрытие, забота об уходе.' },
-                { name: 'Оля', photo: '/c25c6803b91ac53b8419e56bef8ca77d.jpg', desc: 'Колорист. Индивидуальные решения и бережные техники окрашивания.' },
+            {[
+                { name: 'Елена', photo: '/SPECIALISTS/ELENA.png', desc: 'Я, Елена, являюсь главным мастером нашей H. P. Лаборатория красоты. Когда поняла, что полностью заполнила резервуары знаний, у меня появилась потребность делиться накопленным. Соответственно, выросла до тренера и педагога, обучаю новых мастеров, разрабатываю авторские курсы.' },
+                { name: 'Ани', photo: '/SPECIALISTS/ANI.png', desc: 'Ани — мастер перманентного макияжа и преподаватель с более чем 5-летним опытом. Работает в авторском стиле, основанном на естественности, чистоте и гармонии черт. Специализируется на перманентном макияже бровей, губ и межресничного пространства. Является преподавателем и наставником, обучающим мастеров современным и безопасным техникам. Главный принцип её работы — аккуратность, вкус и уважение к индивидуальности каждого клиента.' },
+                { name: 'Света', photo: '/SPECIALISTS/SVETA.png', desc: 'Я — Изюмова Светлана, парикмахер с большим опытом работы. Люблю свою профессию и всё, что связано с красотой и уходом за волосами' },
+                { name: 'Анна', photo: '/SPECIALISTS/anna.jpeg', desc: 'Я Анна сертифицированный мастер по наращиванию волос и мастер своего дела. Владею холодной и горячей техникой наращивания волос. Стаж работы более трёх лет. Обучалась у лучших преподавателей Москвы и Краснодара. Сейчас сама провожу обучение по наращиванию волос.' },
               ].map((m, i) => (
+             
                 <article key={m.name} className="card team-card reveal" style={{ transitionDelay: `${i * 60}ms` }}>
                   <div className="team-photo-box">
                     <img className="team-photo" src={m.photo} alt={m.name} loading="lazy" decoding="async" />
